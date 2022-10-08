@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="/style/chart.css">
+    <link rel="stylesheet" href="./style/wallet.css">
+    <link rel="stylesheet" href="./style/humpcredit.css">
+    <script src="https://kit.fontawesome.com/07d3dd4226.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <div class="nav-logo">
+                    <!-- <div class="nav-img">
+                    </div> -->
+                    <a href="./index.html"><span class="nav-text">HUMPcrypto</span></a>
+                </div>
+                <div class="nav-bar">
+                    <div><span class="welcome-text"><i class=" fa fa-info-circle"></i> 1 HUMP = $8.43</span></div>
+                    <div class="nav-btn">
+                        <div><a href="./wallet.html" class="primary-button"> Connect Wallet</a></div>
+                        <div class="mode-button"><a class="secondary-button"><i class="fa fa-moon"></i></a></div>
+                        <div class="mobile-menu-button" id="mobile-menu-button"><a class="secondary-button"><i
+                                    class="fa fa-bars"></i></a></div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <div class="body-section">
+            <!----------------========================sidebar starts here-->
+            <div class="sidebar mobile-menu" id="sidebarMenu">
+                <a href="./index.html">
+                    <div class="sidebar-item">
+                        <div class="sidebar-icon">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="sidebar-text"><span class="active-link">Dashboard</span></div>
+                    </div>
+                </a>
+                <a href="./stake.html">
+                    <div class="sidebar-item">
+                        <div class="sidebar-icon">
+                            <i class="fa fa-thumbtack"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <span>Stake</span>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="sidebar-item">
+                        <div class="sidebar-icon">
+                            <i class="fa fa-table"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <span>Band</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a>
+                    <div class="sidebar-item">
+                        <div class="sidebar-icon">
+                            <i class="fa fa-calculator"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <span>Calculator</span>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="sidebar-item">
+                        <div class="sidebar-icon">
+                            <i class="fa fa-fire"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <span>Vaults</span>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="sidebar-item">
+                        <div class="sidebar-icon">
+                            <i class="fa fa-chart-line"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <span>Leverage</span>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="sidebar-item">
+                        <div class="sidebar-icon">
+                            <i class="fa fa-bolt"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <span>Flash Mint</span>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="sidebar-item">
+                        <div class="sidebar-icon">
+                            <i class="fa fa-file"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <span>Docs</span>
+                        </div>
+                    </div>
+                </a>
+                <a>
+                    <div class="sidebar-item">
+                        <div class="sidebar-icon">
+                            <i class="fa fa-right-from-bracket"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <span>Logout</span>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+            <!----------------------------Main Body Content starts here-->
+            <div class="body-content">
+                <h1>Dashboard</h1>
+                <span class="small" id="todayTime"></span>
+                <div class="col-divide">
+                    <!--================================left column====================-->
+                    <div class="col-left">
+                        <div class="big-card">
+                            <div class="small-card-1">
+                                <div class="left-label flex-space">
+                                    <span class="small">Today Value</span>
+                                    <span class="dollar-icon"> <i class=" fa fa-dollar"></i></span>
+                                </div>
+                                <div class="left-value">
+                                    <span class="left-value-down-text">$10.79</span>
+                                </div>
+                            </div>
+                            <div class="small-card-2">
+                                <div class="left-label flex-space">
+                                    <span class="small">Sales</span>
+                                    <span class="dollar-icon"> <i class=" fa-solid fa-arrow-trend-up"></i></span>
+                                </div>
+                                <div class="left-value">
+                                    <span class="left-value-down-text">26.92%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="big-card flex" id="big-card">
+                            <div class="small-card-1">
+                                <div class="left-label flex-space">
+                                    <span class="small">Quick Transfer</span>
+                                    <span class="dollar-icon"> <i class=" fa-solid fa-arrow-trend-up"></i></span>
+                                </div>
+                                <div class="left-value">
+                                    <span class="left-value-down-text">45.69%</span>
+                                </div>
+                            </div>
+                            <div class="small-card-2">
+                                <div class="left-label flex-space">
+                                    <span class="small">Expenses</span>
+                                    <span class="dollar-icon"> <i class=" fa fa-dollar"></i></span>
+                                </div>
+                                <div class="left-value">
+                                    <span class="left-value-down-text">59.78%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-block">
+                            <div class="block-card-text">
+                                <div>
+                                    <span class="small">Circulating Supply (Total)</span>
+                                </div>
+                                <div style="margin-top:10px;">
+                                    <span class="left-value-down-text">32000/60000</span>
+                                </div>
+                            </div>
+                            <div class="block-card-graph">
+                                <span>25%</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--=========================Right Column============================-->
+                    <div class="col-right">
+                        <div class="container">
+                            <div class="list-item1">
+                                <div class="bar">
+                                    <span>January</span>
+                                </div>
+                                <div class="bar">
+                                    <span>February</span>
+                                </div>
+                                <div class="bar">
+                                    <span>March</span>
+                                </div>
+                                <div class="bar">
+                                    <span>April</span>
+                                </div>
+                                <div class="bar">
+                                    <span>May</span>
+                                </div>
+                                <div class="bar">
+                                    <span>June</span>
+                                </div>
+                                <div class="bar">
+                                    <span>July</span>
+                                </div>
+                                <div class="bar">
+                                    <span>August</span>
+                                </div>
+                                <div class="bar">
+                                    <span>September</span>
+                                </div>
+                                <div class="bar">
+                                    <span>October</span>
+                                </div>
+                                <div class="bar">
+                                    <span>November</span>
+                                </div>
+                                <div class="bar">
+                                    <span>December</span>
+                                </div>
+                            </div>
+                            <div class="graph-chart">
+                                <div class="graph-text">Total Revenue $836.80</div>
+                                <div class="graph-icon">%</div>
+                            </div>
+                        </div>
+                       
+                        <div class="graph-value"></div>
+                        <div class="list-item2">
+                            <div class="flex-space">
+                                <div><i class=" fa fa-table"></i><span class="small"> &nbsp;Market Cap</span></div>
+                                <div><span class="bold-text">$ 1,852.69</span></div>
+                            </div>
+                            <div class="flex-space">
+                                <div><i class=" fa fa-camera"></i><span class="small"> &nbsp;Market Value for Treasury
+                                        Assets</span></div>
+                                <div><span class="bold-text">$ 6,823.50</span></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-------===========col divide ends here================================-->
+            </div>
+        </div>
+        <!----================================================footer starts here=================-->
+        <footer class="flex">
+            <div class="social-media">
+                <a href="https://www.facebook.com/vkskumarthakur" target="_blank">
+                    <div><i class=" fa fa-facebook"></i></div>
+                </a>
+                <a href="https://www.github.com/vkskumarthakur" target="_blank">
+                    <div><i class=" fa fa-github"></i></div>
+                </a>
+                <a href="https://www.twitter.com/vkskumarthakur" target="_blank">
+                    <div><i class=" fa fa-twitter"></i></div>
+                </a>
+                <a href="https://www.linkedin.com/vkskumarthakur" target="_blank">
+                    <div><i class=" fa fa-linkedin"></i></div>
+                </a>
+            </div>
+            <div class="footer-content flex-space">
+                <div class="copyright">
+                    <p class="small">Designed & Developed By V!kas</p>
+                </div>
+                <div class="key-points">
+                    <span><i class="fa fa-check"> </i>Kyc Verified</span>
+                    <span><i class="fa fa-check"> </i>MCN Ventures</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://www.amcharts.com/lib/3/amcharts.js?x"></script>
+    <script src="https://www.amcharts.com/lib/3/serial.js?x"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/dark.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
