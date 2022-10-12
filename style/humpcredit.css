@@ -6,7 +6,6 @@
 .card-details .card-container-left .container{
     display: flex;
     justify-content: space-between;
-    border: 1px solid var(--border-color);
 }
 .card-details .card-container-left .container .stake,.card-details .card-container-left .container .unstake{
     padding:10px 30px;
