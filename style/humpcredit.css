@@ -17,6 +17,7 @@
 }
 .card-details .card-container-left .container .stake{
     background-color: var(--secondary);
+    border-radius:var(--border-radius);
 }
 .card-details .card-container-left .container .stake{
     border-right: 1px solid var(--border-color);
