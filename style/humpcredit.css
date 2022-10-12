@@ -79,6 +79,7 @@
 .card-container-left .container-footer .container-footer-item .footer-value{
     font-weight: 600;
     font-size: 15px;
+    color:var(--black);
 }
 /*============================Media Queries====================================================*/
 @media screen and (max-width:667px) {
