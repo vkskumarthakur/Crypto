@@ -6,6 +6,7 @@
 .card-details .card-container-left .container{
     display: flex;
     justify-content: space-between;
+    border-radius:var(--border-radius);
 }
 .card-details .card-container-left .container .stake,.card-details .card-container-left .container .unstake{
     padding:10px 30px;
@@ -13,7 +14,6 @@
     text-align: center;
     font-weight: 600;
     color: var(--black);
-    border-radius: var(--border-radius);
 }
 .card-details .card-container-left .container .stake{
     background-color: var(--secondary);
